@@ -11,13 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CalculatorTests {
 
 
-    @Test                           //сдесь сделать свое исключение
-    public void operations() throws Exception {
 
-        Calculator valid = new Calculator();
-
-        assertEquals(0, valid.division(5,0));         //поймали ошибку но перевернутую так как в ветвлении задали 0 если деление на ноль
-    }
 
     @Test
     void plus() {
@@ -68,7 +62,7 @@ class CalculatorTests {
     void range() {
         Calculator calc = new Calculator();
 
-        calc.setA(2147483647);
+        calc.setA(5555555);
 
         int value = calc.getA();
 
